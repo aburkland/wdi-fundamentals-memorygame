@@ -33,10 +33,10 @@ function checkForMatch () {
 
 function flipCard() {
 	var cardId = this.getAttribute('data-id');
-	console.log("User flipped " + cards[cardId].rank);
+	// console.log("User flipped " + cards[cardId].rank);
 	cardsInPlay.push(cards[cardId].rank);
-	console.log(cards[cardId].cardImage);
-	console.log(cards[cardId].suit);
+	// console.log(cards[cardId].cardImage);
+	// console.log(cards[cardId].suit);
 	this.setAttribute('src', cards[cardId].cardImage);
 	if (cardsInPlay.length === 2) {
 		checkForMatch();
